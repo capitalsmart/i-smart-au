@@ -1,0 +1,59 @@
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * User_model class.
+ *
+ * @extends CI_Model
+ */
+class Car_Models_Model extends CI_Model
+{
+
+    protected $_table_name = '';
+    protected $_primary_key = '';
+    protected $_primary_filter = '';
+    protected $_order_by = '';
+    protected $_rules = array();
+    protected $_timestamps = FALSE;
+
+    /**
+     * __construct function.
+     *
+     * @access public
+     * @return void
+     */
+    public function __construct()
+    {
+
+        parent::__construct();
+    }
+
+    function get_car_models($car_id, $keyword)
+    {
+
+        $query = $this->db->get_where('car_make', array('name' => $car_id));
+        $result = $query->result();
+        if (isset($result) && !empty($result)) {
+
+            $car_id = $result[0]->id;
+
+            $this->db->like('model', $keyword, 'after');
+            $query = $this->db->get_where('car_model', array('car_make_id' => $car_id));
+
+            return $query->result();
+        } else {
+            return null;
+        }
+    }
+
+    function get_model($car_id, $keyword)
+    {
+
+        $query = $this->db->get_where('car_model', array('id' => $keyword, 'car_make_id' => $car_id));
+
+        return $query->result();
+
+    }
+
+}

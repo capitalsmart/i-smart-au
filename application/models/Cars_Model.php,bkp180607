@@ -1,0 +1,38 @@
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * User_model class.
+ * 
+ * @extends CI_Model
+ */
+class Cars_Model extends CI_Model  {
+
+    protected $_table_name = 'user';
+    protected $_primary_key = 'id';
+    protected $_primary_filter = 'intval';
+    protected $_order_by = '';
+    protected $_rules = array();
+    protected $_timestamps = FALSE;
+
+    /**
+     * __construct function.
+     * 
+     * @access public
+     * @return void
+     */
+    public function __construct() {
+
+        parent::__construct();
+    }
+
+    function get_cars_list($key) {
+
+            $this->db->like('name', $key);
+            $query = $this->db->get('car_make');
+            return $query->result();
+
+    }
+
+}

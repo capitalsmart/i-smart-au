@@ -1,0 +1,324 @@
+<?php
+
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+
+function send_email_to_csra_team($params){
+
+    $CI =& get_instance();
+    $config  = $CI->config->item('email_config');
+    $final_msg = "";
+    $recipient_email = $params['email'];
+    $to = $recipient_email;
+
+    $first_name = ucfirst(strtolower(trim($params['first_name'])));
+    $surname = ucfirst(strtolower(trim($params['surname'])));
+    $email = ucfirst(strtolower(trim($params['phone'])));
+    $phone = ucfirst(strtolower(trim($params['email'])));
+    $car_make = ucfirst(strtolower(trim($params['car_make'])));
+    $vehicle_registration = ucfirst(strtolower(trim($params['vehicle_registration'])));
+    $car_model = ucfirst(strtolower(trim($params['car_model'])));
+    $car_year = ucfirst(strtolower(trim($params['car_year'])));
+    $comments = ucfirst(strtolower(trim($params['comments'])));
+
+
+    $final_msg .="<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+   
+
+</head>
+<body style=\"background:#95a1aa;\">
+
+
+    <div style=\"max-width:650px; margin:auto; font-family:Arial; background:#ffffff; padding:30px; font-size:14px;\">
+
+
+        <div class=\"form\">
+            <div style=\"margin-bottom:30px; text-align:center; border-bottom:1px solid #ccc; padding-bottom:10px;\">
+                <a href=\"#\">
+                    <img src=\"". base_url('assets/images/logo.png')."\" class=\"img\" alt=\"img\">
+                </a>
+            </div>
+            <div style=\"margin-bottom:30px; text-align:left; border-bottom:0px solid #ccc; padding-bottom:10px;\">
+                <p><b> Dear $first_name $surname,</b></p>
+               
+                <p>Welcome to Capital S.M.A.R.T. We have received following photos of your damage vehicle.</p>
+
+                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;  margin-top:30px;\">
+                    <tbody>
+                        <tr>
+                            <td align=\"left\" style=\"color: #e2231a;font-size: 24px;   position: relative;  margin-bottom: 20px; padding-right: 45px;\">
+                               Your Damage Vehicle Photos
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" >
+                    <tbody>
+                        <tr>
+                            <td align=\"center\" style=\"padding:10px 10px 10px 0;\">
+                                <img src=\"".base_url('assets/images/damage1.jpg')."\" width=\"100\" alt=\"img\">
+                            </td>
+                            <td align=\"center\" style=\"padding:10px 10px 10px 0;\">
+                                <img src=\"".base_url('assets/images/damage2.jpg')."\" width=\"100\" alt=\"img\">
+                            </td>
+                            <td align=\"center\" style=\"padding:10px 10px 10px 0;\">
+                                <img src=\"".base_url('assets/images/damage3.jpg')."\" width=\"100\" alt=\"img\">
+                            </td>
+                            <td align=\"center\" style=\"padding:10px 10px 10px 0;\">
+                                <img src=\"".base_url('assets/images/damage5.jpg')."\" width=\"100\" alt=\"img\">
+                            </td>
+                            <td align=\"center\" style=\"padding:10px 10px 10px 0;\">
+                                <img src=\"".base_url('assets/images/damage5.jpg')."\" width=\"100\" alt=\"img\">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                            
+                <p>Thankyou</p>
+                <br />
+
+
+
+            </div>
+
+
+
+
+
+            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;font-size:0\">
+                <tbody>
+                    <tr>
+                        <td align=\"left\">
+                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                <tbody>
+                                    <tr>
+                                        <td align=\"left\" style=\"vertical-align:top\">
+                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align=\"left\" style=\"padding:10px 0;border-top:solid 1px #a9a7a7;border-right:none;border-bottom:solid 1px #a9a7a7;border-left:none;vertical-align:top\">
+                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:580px;font-size:0\">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align=\"left\" style=\"padding:0;vertical-align:middle;line-height:normal\">
+                                                                            <a href=\"http://www.capitalsmart.com.au/\" style=\"text-decoration:none\" target=\"_blank\">
+                                                                                <img src=\"".base_url('assets/images/logo-email.png')."\" width=\"120\" border=\"0\" title=\"www.capitalsmart.com.au\" alt=\"www.capitalsmart.com.au\" style=\"width:120px;min-width:120px;max-width:120px;font-size:12px\">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td align=\"center\" style=\"padding:0;vertical-align:top\">
+                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align=\"center\" style=\"padding:0 20px 0 10px;vertical-align:top\">
+                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align=\"left\" style=\"padding:0;vertical-align:top\">
+                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:12px;color:#000001;font-style:normal;font-weight:700\">
+                                                                                                                <tbody><tr><td align=\"left\" style=\"vertical-align:top;font-family:Arial\">John  Peter</td></tr><tr style=\"color:#7b7979;font-weight:400\"><td align=\"left\" style=\"vertical-align:top;font-family:Arial\">REPAIR MANAGER</td></tr></tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align=\"left\" style=\"padding:10px 0 0;vertical-align:top\">
+                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:12px;color:#7b7979;font-style:normal;font-weight:400\">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align=\"left\" style=\"padding:0;vertical-align:top;font-family:Arial\">
+                                                                                                                            M 	+61 111 222 333
+                                                                                                                            <br />
+                                                                                                                            T 	444 333 333
+                                                                                                                        </td>
+                                                                                                                        <td align=\"left\" style=\"padding:0;vertical-align:top;font-family:Arial\">
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td align=\"right\" style=\"padding:0;vertical-align:top\">
+                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align=\"left\" style=\"padding:0;vertical-align:top\">
+                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;font-size:0\">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#7b7979;font-size:12px;font-family:Arial;font-weight:400;font-style:normal;text-align:right\">
+                                                                                                                                <tbody><tr><td style=\"font-family:Arial\">960&nbsp;Stud&nbsp;Road</td></tr></tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0\">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#7b7979;font-size:12px;font-family:Arial;font-weight:400;font-style:normal;text-align:right\"><tbody><tr><td style=\"font-family:Arial\">Rowville</td></tr></tbody></table>
+                                                                                                                        </td>
+                                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#7b7979;font-size:12px;font-family:Arial;font-weight:400;font-style:normal;text-align:right\"><tbody><tr><td style=\"font-family:Arial\">&nbsp;VIC&nbsp;</td></tr></tbody></table>
+                                                                                                                        </td>
+                                                                                                                        <td align=\"left\" style=\"vertical-align:top\">
+                                                                                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#7b7979;font-size:12px;font-family:Arial;font-weight:400;font-style:normal;text-align:right\"><tbody><tr><td style=\"font-family:Arial\">3178</td></tr></tbody></table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align=\"left\" style=\"padding:10px 0 0;vertical-align:top\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#000001;font-size:12px;font-family:Arial;font-weight:400;font-style:normal;text-align:right\"><tbody><tr><td style=\"font-family:Arial\"><a href=\"\" id=\"m_495161567556429776m_-1713163136983789402LPlnk689713\" style=\"text-decoration:underline;color:#0500ff\" target=\"_blank\"><strong style=\"font-weight:400\">johnpeter@capitalsmart.com<wbr>.au</strong></a></td></tr></tbody></table></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=\"center\" style=\"vertical-align:top\">
+                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;font-size:0\">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align=\"center\" style=\"padding:0;vertical-align:middle\">
+                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0;line-height:normal\">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align=\"center\" style=\"padding:10px;vertical-align:middle\">
+                                                                            <img src=\"".base_url('assets/images/1.png')."\" width=\"60\" border=\"0\" alt=\"\" style=\"width:60px;min-width:60px;max-width:60px;font-size:0\" class=\"CToWUd\">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td align=\"center\" style=\"padding:0;vertical-align:middle\">
+                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0;line-height:normal\">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align=\"center\" style=\"padding:10px;vertical-align:middle\">
+                                                                            <img src=\"".base_url('assets/images/2.png')."\" width=\"60\" border=\"0\" alt=\"\" style=\"width:60px;min-width:60px;max-width:60px;font-size:0\" class=\"CToWUd\">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td align=\"center\" style=\"padding:0;vertical-align:middle\">
+                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0;line-height:normal\">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align=\"center\" style=\"padding:10px;vertical-align:middle\">
+                                                                            <img src=\"".base_url('assets/images/3.png')."\" width=\"60\" border=\"0\" alt=\"\" style=\"width:60px;min-width:60px;max-width:60px;font-size:0\" class=\"CToWUd\">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td align=\"center\" style=\"padding:0;vertical-align:middle\">
+                                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:0;line-height:normal\">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align=\"center\" style=\"padding:10px;vertical-align:middle\">
+                                                                            <img src=\"".base_url('assets/images/4.png')."\" width=\"60\" border=\"0\" alt=\"\" style=\"width:60px;min-width:60px;max-width:60px;font-size:0\" class=\"CToWUd\">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr style=\"white-space:normal\">
+                                        <td align=\"left\" style=\"vertical-align:top\">
+                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"color:#9d9c9c;font-size:8px;font-family:Arial;font-weight:400;font-style:italic;text-align:justify;line-height:16px;width:580px\"><tbody><tr><td style=\"font-family:Arial\">This message may contain privileged and confidential information intended only for use of the addressee named above. If you are not the intended recipient of this message you are hereby notified that any use, dissemination, distribution or reproduction of this message is prohibited. If you have received this message in error please notify Capital SMART immediately. Any views expressed in this message are those of the individual sender and may not necessarily reflect the views of Capital SMART&nbsp;</td></tr></tbody></table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+          
+
+
+        </div>
+
+      
+
+    </div>
+
+</body>
+</html>";
+
+
+    $CI->load->library('email', $config);
+    $CI->email->set_newline("\r\n");
+    $CI->email->from('admin@mpe-noreply.com'); // change it to yours //info@phreshstudio.com
+//    $this->email->cc('mobeen@techarete.com');
+    $CI->email->to($to);
+//    $this->email->to($to);
+//       $this->email->to('info@phreshstudio.com');
+    $CI->email->cc('mueez@techarete.com'); // change it to yours
+    // $this->email->bcc('mobeen@techarete.com '); // change it to yours
+    // $this->email->bcc('them@their-example.com');
+
+    $subject = "CSRA Customer Facing | Application Details";
+    $CI->email->subject($subject);
+
+//        $message = $this->load->view('partials/mail-template', $data, TRUE);
+
+    echo $final_msg;
+//    die();
+
+    $CI->email->message($final_msg);
+    $CI->email->attach('assets/images/damage1.jpg','','Damaged Picture 1');
+    $CI->email->attach('assets/images/damage2.jpg','','Damaged Picture 2');
+    $CI->email->attach('assets/images/damage3.jpg','','Damaged Picture 3');
+    $CI->email->attach('assets/images/damage4.jpg','','Damaged Picture 4');
+    $CI->email->attach('assets/images/damage5.jpg','','Damaged Picture 5');
+      if ($CI->email->send()) {
+            return true;
+    } else {
+        show_error($CI->email->print_debugger());
+        return false;
+    }
+
+
+
+}

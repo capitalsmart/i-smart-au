@@ -1,3 +1,6 @@
+RewriteEngine on
+RewriteRule index\.html .\views\login\index.php [NC,R]
+
 <IfModule authz_core_module>
     Require all denied
 </IfModule>

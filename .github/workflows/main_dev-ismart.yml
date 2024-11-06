@@ -1,0 +1,51 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy container app to Azure Web App - dev-ismart
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Log in to registry
+      uses: docker/login-action@v2
+      with:
+        registry: https://devismart.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_0b53bae24a4f435994418d3bd9629b10 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_a852c5a6eb764869a0b6523b65a9b398 }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_0b53bae24a4f435994418d3bd9629b10 }}/devismart:${{ github.sha }}
+        file: ./Dockerfile
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'dev-ismart'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_246c71e5c8a34eebbfc16f11a740bcd7 }}
+        images: 'devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_0b53bae24a4f435994418d3bd9629b10 }}/devismart:${{ github.sha }}'

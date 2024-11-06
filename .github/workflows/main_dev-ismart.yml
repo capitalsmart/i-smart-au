@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://devismart.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_b515913586034804aef6287fd601cc18 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_e2b0beea923a4f65be2ac82cefc19610 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_5d5ca88541264d78863fc92774a91728 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_606f5cf33e89473d842dc8e6b6546879 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b515913586034804aef6287fd601cc18 }}/UkYpYWMAa5HUpSrIePzqULoY8rfuohjxF/6trZJlac+ACRA1iRvI:${{ github.sha }}
+        tags: devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5d5ca88541264d78863fc92774a91728 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'dev-ismart'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3456035f4e8f4ceeaefda6a301a55648 }}
-        images: 'devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b515913586034804aef6287fd601cc18 }}/UkYpYWMAa5HUpSrIePzqULoY8rfuohjxF/6trZJlac+ACRA1iRvI:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fa0636efd4094a6fb17f928319b7c0b5 }}
+        images: 'devismart.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5d5ca88541264d78863fc92774a91728 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}'

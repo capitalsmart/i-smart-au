@@ -79,11 +79,11 @@ $settings = [
         'hostname' => 'localhost',
         'database' => 'db_csra_miniapp',
         'username' => 'root',
-        'password' => 'Z5scQeGAu2'
+        'password' => "xkT6t.A-7E\LNL'j"
     ],
     'development' => [
         'hostname' => 'localhost',
-        'database' => 'db_csra_miniapp',
+        'database' => 'car_damage_app',
         'username' => 'root',
         'password' => 't3ch@ret3'
     ],

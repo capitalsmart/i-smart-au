@@ -565,20 +565,6 @@ $config['email_config'] = Array(
 $config['csra_emails'] = [
     'production' => [
         'cc_recipient_customer_email' => [
-<<<<<<< Updated upstream
-            /* 'innam@techarete.com',
-            'zeshan@techarete.com',
-            'babar@techarete.com',
-            'mueez@techarete.com',
-            'richard.bench@capitalsmart.com.au', */
-        ],
-        'csra_team_emails' => [
-            /* 'innamhunzai@gmail.com',
-            'zeshan@techarete.com',
-            'babar@techarete.com',
-            'mueez@techarete.com',
-            'richard.bench@capitalsmart.com.au' */
-=======
             //'innam@techarete.com',
             //'zeshan@techarete.com',
             //'babar@techarete.com',
@@ -595,21 +581,22 @@ $config['csra_emails'] = [
 	      'i-smart@capitalsmart.com.au'
             //'mueez@techarete.com',
             //'richard.bench@capitalsmart.com.au'
->>>>>>> Stashed changes
         ]
     ],
     'development' => [
         'cc_recipient_customer_email' => [
-            /* 'zeshan@techarete.com',
-            'babar@techarete.com', */
+         'mueez@techarete.com',
+	/* 'zeshan@techarete.com',
+            'babar@techarete.com',
 			'andrew.bartlett@capitalsmart.com.au',
-			'jim.vais@capitalsmart.com.au',
+			'jim.vais@capitalsmart.com.au', */
         ],
         'csra_team_emails' => [
+	'mueez@techarete.com',
             /* 'zeshan@techarete.com',
-            'babar@techarete.com', */
+            'babar@techarete.com',
 			'andrew.bartlett@capitalsmart.com.au',
-			'jim.vais@capitalsmart.com.au',
+			'jim.vais@capitalsmart.com.au', */
         ]
     ],
 ];

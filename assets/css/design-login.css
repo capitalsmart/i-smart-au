@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* IMON */
+@font-face { font-family: 'Conv_Proxima Nova Reg'; src: url('../fonts/Proxima Nova Reg.eot'); src: local('☺'), url('../fonts/Proxima Nova Reg.woff') format('woff'), url('../fonts/Proxima Nova Reg.ttf') format('truetype'), url('../fonts/Proxima Nova Reg.svg') format('svg'); }
+@font-face { font-family: 'Conv_Proxima Nova Bold'; src: url('../fonts/Proxima Nova Bold.eot'); src: local('☺'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype'), url('../fonts/Proxima Nova Bold.svg') format('svg'); }
+/********************************************************************************************/
+html { overflow-x: hidden; }
+body { overflow-x: hidden; font-weight: normal; font-family: 'Conv_Proxima Nova Reg'; background: #f2f2f2; -ms-overflow-style: scrollbar; }
+
+.col { padding-left: 5px; padding-right: 5px; }
+.row { margin: 0 -5px !important; }
+
+.container { border-left: 0px dotted red; border-right: 0px dotted red; width: 100%; max-width: 100%; padding-left: 10px; padding-right: 10px; }
+
+
+.top-bar { background-color: #ffffff; float: left; margin-bottom: 10px; margin-top: 10px; padding: 0; position: relative; width: 100%; z-index: 1; }
+    .top-bar .logo { float: left; padding-left: 10px; padding-top: 8px; padding-bottom: 8px; }
+        .top-bar .logo img { max-height: 60px; }
+
+
+.benifits-page { padding: 15px; padding-bottom: 0; float: left; width: 100%; background: #fff; }
+    .benifits-page img { max-width: 100%; }
+    .benifits-page .title { font-size: 16px; line-height: normal; margin-top: 20px; text-align: center; margin-bottom: 0px; }
+    .benifits-page .logo { text-align: center; }
+        .benifits-page .logo img { max-width: 100%; max-height: 160px; margin: auto; }
+    .benifits-page .picture { overflow: hidden; }
+        .benifits-page .picture img { max-width: 100%; }
+    .benifits-page .list { float: left; width: 100%; }
+        .benifits-page .list .box { background: #fff none repeat scroll 0 0; float: left; width: 100%; margin-bottom: 30px; cursor: pointer; }
+            .benifits-page .list .box h4 { border-bottom: 5px solid #cd1c16; background: #444444 none repeat scroll 0 0; color: #ffffff; font-family: "Conv_Proxima Nova Bold"; font-size: 14px; margin: 0; padding: 10px; text-align: center; }
+            .benifits-page .list .box p { float: left; max-width: 70%; margin-bottom: 0; }
+            .benifits-page .list .box .wrap { float: left; font-size: 12px; line-height: 16px; padding: 15px; width: 100%; min-height: 120px; border: 1px solid #eee; }
+            .benifits-page .list .box figure { max-width: 100%; text-align: center; }
+                .benifits-page .list .box figure img { max-width: 100%; max-height: 120px; }
+
+
+body.modal-open { overflow: hidden; position: fixed; width: 100%; }
+.modal-open { padding: 0 !important; }
+.modal-content { border-radius: 0; box-shadow: none; float: left; width: 100%; }
+.modal-body { }
+.modal-content .wrap { float: left; width: 100%;word-wrap: break-word; font-size: 16px; padding-top: 15px; padding-left: 15px; padding-right: 15px; max-height: 500px; overflow-y: scroll; padding-bottom: 15px; }
+    .modal-content .wrap p { padding: 0 20px; }
+    .modal-content .wrap h2 { color: #cd1c16; }
+    .modal-content .wrap h3 { color: #cd1c16; }
+    .modal-content .wrap h4 { color: #cd1c16; }
+    .modal-content .wrap h5 { color: #cd1c16; }
+    .modal-content .wrap ul { }
+.modal-content .logobox { float: right; margin-left: 10px; border: 1px solid #eee; margin-bottom: 20px; right: 40px; top: -30px; background: #fff; padding: 10px; }
+    .modal-content .logobox img { max-height: 80px; }
+.modal-content figure img { max-width: 100%; }
+.modal-header { padding: 15px 15px; background: #cd1c16; color: #fff; width: 100%; }
+    .modal-header h4 { font-size: 18px; margin: 0; }
+    .modal-header .close { color: #fff !important; opacity: 1; text-shadow: none; }
+.modal-smarter { width: 98%; max-width: 768px; margin-left: auto; margin-right: auto; }
+    .modal-smarter img { max-width: 100%; width: 100%; }
+
+
+
+
+
+
+
+
+
+
+.bg { background: #555; }
+
+.mobile { }
+    .mobile.container { max-width: 768px; margin: auto; float: none; padding: 0; background: #f2f2f2; }
+    .mobile .top-bar { position: fixed; left: 0; top: -10px; z-index: 999; background: none; }
+    .mobile .container { max-width: 768px; margin: auto; float: none; background: #fff; position: relative; padding: 10px; }
+    .mobile .top-bar .logo img { max-height: 40px; }
+    .mobile .content { margin-top: 87px; background: none; }
+    .mobile .top-bar .logo { float: none; padding: 0; text-align: center; }
+    .mobile .benifits-page { max-width: 100%; margin: auto; float: none; padding: 0; }
+        .mobile .benifits-page .list .box { float: none; position: relative; }
+            .mobile .benifits-page .list .box.active h4 { background: #cd1c16; }
+            .mobile .benifits-page .list .box:after { content: "\e080"; font-family: 'Glyphicons Halflings'; position: absolute; right: 20px; top: 17px; color: #fff; }
+            .mobile .benifits-page .list .box.active:after { content: "\e114"; }
+            .mobile .benifits-page .list .box h4 { padding: 15px; text-align: left; padding-left: 110px; font-size: 16px; }
+            .mobile .benifits-page .list .box p { float: none; width: 100%; max-width: 100%; margin: 0; }
+            .mobile .benifits-page .list .box figure { height: 70px; margin-top: -64px; background: #fff; z-index: 2; margin-left: 7px; max-width: 90px; padding: 5px; border: 5px solid #cd1c16; position: relative; }
+                .mobile .benifits-page .list .box figure img { max-width: 100%; max-height: 90px; max-height: 100%; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+            .mobile .benifits-page .list .box .wrap { min-height: inherit; padding: 0; border: 0; position: relative; }
+        .mobile .benifits-page .list .slimScrollDiv { margin-bottom: 10px; background: #fff; padding: 15px; position: relative; }
+        .mobile .benifits-page .bb { position: relative; top: -30px; }
+    .mobile .navbar-default { background: none !important; }
+    .mobile .navbar-header { max-width: 480px; margin: auto; float: none !important; }
+    .mobile .navbar-nav > li > a span { background: #fff; width: 60px; }
+    .mobile ul.nav { max-height: 300px; overflow-y: scroll; max-width: 480px; margin: auto !important; float: none; background: #e1221b; }
+
+
+
+.benifits-mobile { margin-top: 100px; padding-left: 15px; padding-right: 15px; }
+    .benifits-mobile .button-bar { margin-bottom: 20px; margin-top: -25px; }
+        .benifits-mobile .button-bar .btn { background: #e2231a; border: 0; color: #fff; }
+            .benifits-mobile .button-bar .btn:hover { background: #4d4d4f; }
+    .benifits-mobile .logo { margin-bottom: 40px; }
+    .benifits-mobile img { max-width: 100%; width: 100%; height: auto; }
+    .benifits-mobile .list-items { background: #fff; padding: 30px 15px 0; margin-left: -15px; margin-right: -15px; padding-bottom: 0; }
+        .benifits-mobile .list-items .box { margin-bottom: 30px; }
+            .benifits-mobile .list-items .box:last-child { margin-bottom: 0; }
+            .benifits-mobile .list-items .box h2 { font-size: 26px; margin-top: 0; color: #e2231a; font-weight: bold; margin-bottom: 0; }
+            .benifits-mobile .list-items .box p { color: #4d4d4f; }
+            .benifits-mobile .list-items .box figure { margin-left: -15px; margin-right: -15px; max-height: 350px; overflow: hidden; margin-top: 20px; }
+
+
+
+.overly { position: fixed; z-index: 9; background: rgba(0,0,0,0.98); width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; max-height: 100%; }
+
+.loginbox { position: relative; z-index: 999;  }
+
+
+    .loginbox .box { max-width: 361px; margin: auto; padding: 20px; background: #fff; text-align: center; margin-top: 80px; margin-bottom:50px; border: 5px solid #000; }
+        .loginbox .box .logo img { max-height: 60px; }
+        .loginbox .box .form-group { margin-bottom: 30px; }
+    .loginbox .error-msg { font-size: 12px; color: red; height: 0; position: relative; top: -28px; }
+    .loginbox .box h2 { margin-top: 0; margin-bottom: 20px; font-size: 18px; }
+    .loginbox .box .form-control { background: #fff; border: 1px solid #ccc; margin-top: 10px; border-radius: 3px; box-shadow: 1px 1px 1px 0px #eee; padding: 10px; height: auto; text-align: center; font-size: 18px; }
+    .loginbox .box .btn { background: #e2231a; border: 0; color: #fff; margin-top: 10px; border-radius: 0; }
+
+    .loginbox .g-recaptcha  {  }
+.loginbox .g-recaptcha * {  }
+
+.footer { background: #ffffff none repeat scroll 0 0; font-size: 14px; padding: 15px; text-align: center; color: #727272; margin-bottom: 0px; }
+    .footer .copy { }
+
+
+
+
+
+
+@media (max-width: 360px) {
+}
+
+@media screen and ( max-height: 600px ) {
+    .modal-content .wrap { max-height: 300px; }
+
+
+    /*.loginbox .box { max-height: 480px; overflow-y: scroll; }*/
+}
+
+
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*.containerr {*/
+    /*max-width: 304px;*/
+    /*background: #ccc;*/
+    /*padding: 20px;*/
+/*}*/
+
+.g-recaptcha {
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    padding-left: 3px !important;
+}
+
+/* Hides the On Load Loding Text ............*/
+.ui-loader { display: none; }

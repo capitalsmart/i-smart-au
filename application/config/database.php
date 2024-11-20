@@ -76,29 +76,29 @@ $query_builder = TRUE;
 
 $settings = [
     'production' => [
-        'hostname' => 'localhost',
+        'hostname' => 'ismart-server.mysql.database.azure.com',
         //'database' => 'db_csra_miniapp',
         //'username' => 'root',
         //'password' => "xkT6t.A-7E\LNL'j"
 		'database' => 'ismart-database',
         'username' => 'kfmhycepje',
-        'password' => "5NUYAYMMlGKsV5e$"
+        'password' => "SMART2024-WEBAPP"
     ],
     'development' => [
         //'hostname' => 'localhost',
         //'database' => 'car_damage_app',
         //'username' => 'root',
         //'password' => 't3ch@ret3'
-		'hostname' => 'localhost',
+		'hostname' => 'ismart-server.mysql.database.azure.com',
         'database' => 'ismart-database',
         'username' => 'kfmhycepje',
-        'password' => '5NUYAYMMlGKsV5e$'
+        'password' => 'SMART2024-WEBAPP'
     ],
     'local' => [
-        'hostname' => 'localhost',
+        'hostname' => 'ismart-server.mysql.database.azure.com',
         'database' => 'ismart-database',
-        'username' => '5NUYAYMMlGKsV5e$',
-        'password' => ''
+        'username' => 'kfmhycepje',
+        'password' => 'SMART2024-WEBAPP'
 		//'hostname' => 'localhost',
         //'database' => 'carapp',
         //'username' => 'root',

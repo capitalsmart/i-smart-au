@@ -569,7 +569,7 @@ $config['csra_emails'] = [
             //'zeshan@techarete.com',
             //'babar@techarete.com',
 	    //'andrew.bartlett@capitalsmart.com.au',
-	      'i-smart@capitalsmart.com.au',
+	      'scott.lancaster@amagroupltd.com',
             //'mueez@techarete.com',
             //'richard.bench@capitalsmart.com.au',
         ],
@@ -578,21 +578,21 @@ $config['csra_emails'] = [
             //'zeshan@techarete.com',
             //'babar@techarete.com',
 	    //'andrew.bartlett@capitalsmart.com.au',
-	      'i-smart@capitalsmart.com.au'
+	      'scott.lancaster@amagroupltd.com'
             //'mueez@techarete.com',
             //'richard.bench@capitalsmart.com.au'
         ]
     ],
     'development' => [
         'cc_recipient_customer_email' => [
-         'mueez@techarete.com',
+         'scott.lancaster@amagroupltd.com',
 	/* 'zeshan@techarete.com',
             'babar@techarete.com',
-			'andrew.bartlett@capitalsmart.com.au',
+			andrew.bartlett@capitalsmart.com.au',
 			'jim.vais@capitalsmart.com.au', */
         ],
         'csra_team_emails' => [
-	'mueez@techarete.com',
+	'scott.lancaster@amagroupltd.com',
             /* 'zeshan@techarete.com',
             'babar@techarete.com',
 			'andrew.bartlett@capitalsmart.com.au',

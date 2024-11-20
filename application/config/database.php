@@ -77,12 +77,19 @@ $query_builder = TRUE;
 $settings = [
     'production' => [
         'hostname' => 'localhost',
-        'database' => 'db_csra_miniapp',
+        //'database' => 'db_csra_miniapp',
+        //'username' => 'root',
+        //'password' => "xkT6t.A-7E\LNL'j"
+		'database' => 'db_csra_miniapp',
         'username' => 'root',
         'password' => "xkT6t.A-7E\LNL'j"
     ],
     'development' => [
-        'hostname' => 'localhost',
+        //'hostname' => 'localhost',
+        //'database' => 'car_damage_app',
+        //'username' => 'root',
+        //'password' => 't3ch@ret3'
+		'hostname' => 'localhost',
         'database' => 'car_damage_app',
         'username' => 'root',
         'password' => 't3ch@ret3'
@@ -92,6 +99,10 @@ $settings = [
         'database' => 'carapp',
         'username' => 'root',
         'password' => ''
+		//'hostname' => 'localhost',
+        //'database' => 'carapp',
+        //'username' => 'root',
+        //'password' => ''
     ]
 ];
 

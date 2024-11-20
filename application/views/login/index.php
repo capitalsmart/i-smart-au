@@ -35,7 +35,7 @@
         </div>
         <br />
         <h2>Credentials Required </h2>
-        <form action="/Login/index1" method="POST">
+        <form action="/Login/index" method="POST">
             <div class="form-group">
                 <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd">
             </div>

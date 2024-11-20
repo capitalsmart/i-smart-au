@@ -35,7 +35,7 @@ $domain = $_SERVER['HTTP_HOST'];
 
 $protocol = [
     'production' => 'https://',
-    'development' => 'http://',
+    'development' => 'https://',
     'local' => 'http://',
 ];
 

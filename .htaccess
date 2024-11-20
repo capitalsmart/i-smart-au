@@ -1,3 +1,6 @@
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+</IfModule>
 
 RewriteEngine on
 RewriteCond $1 !^(index\.php|public|\.txt)

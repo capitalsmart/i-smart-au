@@ -24,10 +24,12 @@ class FileUploader extends CI_Controller {
     }
 
     public function index() {
-        if ($this->session->userdata("uuid-user") === null) {
+       /* if ($this->session->userdata("uuid-user") === null) {
             header('HTTP/1.1 401 Unauthorized', true, 401);
             exit();
         }
+		*/
+
         $this->fineuploader->allowedExtensions = ['jpeg', 'jpg', 'png'];
         $this->fineuploader->sizeLimit = 2000000; //2 mb
         $uploadDir = 'assets/uploads/' . $this->session->userdata("uuid-user");

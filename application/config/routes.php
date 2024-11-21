@@ -52,3 +52,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Customer_Facing';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$routes->post('/index', 'FileUploader::index'); 

@@ -32,7 +32,7 @@ class FileUploader extends CI_Controller {
 
         $this->fineuploader->allowedExtensions = ['jpeg', 'jpg', 'png'];
         $this->fineuploader->sizeLimit = 2000000; //2 mb
-        $uploadDir = 'assets/uploads/' . $this->session->userdata("uuid-user");
+        $uploadDir = '/assets/uploads/' . $this->session->userdata("uuid-user");
         $method = get_request_method();
 
         if ($method == "POST") {

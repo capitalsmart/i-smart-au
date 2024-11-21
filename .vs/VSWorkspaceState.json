@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\application\\assets",
+    "\\application\\assets\\uploads",
+    "\\application\\controllers",
+    "\\application\\libraries",
+    "\\assets\\uploads",
+    "\\system\\core\\compat",
+    "\\system\\helpers"
   ],
+  "SelectedNode": "\\nginx.conf",
   "PreviewInSolutionExplorer": false
 }

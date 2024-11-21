@@ -9,10 +9,10 @@
 </head>
 
 <body>
-$base = <?php echo base_url; ?>
+$base_dir = __DIR__;
 
 
-echo $base;
+echo $base_dir
 
 
 

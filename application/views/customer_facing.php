@@ -24,12 +24,12 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif
         <!--[if IE]>
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/app-ie.css'); ?>" />
+            <link rel="stylesheet" type="text/css" href= "<?php echo base_url('assets/css/app-ie.css'); ?>" />
         <![endif]-->
 
     </head>
     <body>
-	hello
+	
         <div class="container ">
             <div class="form" id="form">
                 <?php $this->load->view('partials/header'); ?>

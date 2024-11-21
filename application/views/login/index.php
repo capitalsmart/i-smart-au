@@ -11,9 +11,9 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="<?= base_url("assets/images/apple-icon-114x114.png"); ?>" />
 	<link rel="apple-touch-icon" sizes="144x144" href="<?= base_url("assets/images/apple-icon-144x144.png"); ?>" />
    
-	<!-- <link href="<?php echo base_url('assets/fonts/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet"> --> 
-    <!-- <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet"> --> 
-    <!-- <link href="<?php echo base_url('assets/css/design-login.css'); ?>" rel="stylesheet"> --> 
+	 <link href="<?php echo base_url('assets/fonts/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet"> 
+     <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet"> 
+     <link href="<?php echo base_url('assets/css/design-login.css'); ?>" rel="stylesheet"> 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

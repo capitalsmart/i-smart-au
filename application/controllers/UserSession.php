@@ -8,11 +8,19 @@ class UserSession extends CI_Controller {
         $response = [];
         if(!$this->session->userdata("isUserLoggedIn")) {
             $this->session->set_userdata("isUserLoggedIn", false);
-            $response = [
+            /*
+			$response = [
                 'redirectUrl' => 'Login/index',
                 'message' => 'unauthorized',
                 'status' => '403'
             ];
+			*/
+			$response = [
+                'redirectUrl' => '',
+                'message' => 'OK',
+                'status' => 200
+            ];
+
         } else {
             $response = [
                 'redirectUrl' => '',

@@ -9,8 +9,10 @@
 </head>
 
 <body>
+$base = <?php echo base_url; ?>
 
-echo base_url
+echo $base;
+
 
 
 </body>

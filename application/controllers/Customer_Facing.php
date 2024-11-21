@@ -7,7 +7,7 @@ class Customer_Facing extends CI_Controller
     {
 
         parent::__construct();
-
+		/*
         if (!$this->session->userdata("isUserLoggedIn") && !isset($_REQUEST['isAjax'])) {
             redirect('/Login/index', 'refresh');
         } elseif(!$this->session->userdata("isUserLoggedIn") && isset($_REQUEST['isAjax'])) {
@@ -19,6 +19,7 @@ class Customer_Facing extends CI_Controller
             echo json_encode($response);
             die;
         }
+		*/
         $this->load->model('Cars_Model');
         $this->load->model('Car_Models_Model');
 

@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\default",
-    "\\default\\assets"
+    "\\.github",
+    "\\.github\\workflows",
+    "\\default"
   ],
-  "SelectedNode": "\\default\\assets",
+  "SelectedNode": "\\.user.ini",
   "PreviewInSolutionExplorer": false
 }

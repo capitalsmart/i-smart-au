@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\default",
+    "\\default\\application",
+    "\\default\\application\\assets",
+    "\\default\\application\\controllers",
+    "\\default\\application\\views",
+    "\\default\\assets\\uploads",
+    "\\default\\system"
   ],
-  "SelectedNode": "\\C:\\Users\\scott.lancaster\\Source\\Repos\\i-smart-au",
+  "SelectedNode": "\\default\\nginx.conf",
   "PreviewInSolutionExplorer": false
 }

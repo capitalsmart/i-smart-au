@@ -2,13 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\default",
-    "\\default\\application",
-    "\\default\\application\\assets",
-    "\\default\\application\\assets\\uploads",
-    "\\default\\application\\assets\\uploads\\chunks",
-    "\\default\\application\\controllers",
-    "\\default\\assets",
-    "\\default\\assets\\uploads"
+    "\\default\\assets"
   ],
+  "SelectedNode": "\\default\\assets",
   "PreviewInSolutionExplorer": false
 }

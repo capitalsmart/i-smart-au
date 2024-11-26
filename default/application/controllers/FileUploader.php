@@ -1,7 +1,7 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-[Produces("text/plain")]
+/*[Produces("text/plain")]*/
 
 class FileUploader extends CI_Controller {
 

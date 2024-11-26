@@ -4,12 +4,9 @@
     "\\.github",
     "\\default",
     "\\default\\application",
-    "\\default\\application\\assets",
     "\\default\\application\\controllers",
-    "\\default\\application\\views",
-    "\\default\\assets\\uploads",
-    "\\default\\system"
+    "\\default\\assets\\uploads"
   ],
-  "SelectedNode": "\\default\\nginx.conf",
+  "SelectedNode": "\\default\\application\\controllers\\FileUploader.php",
   "PreviewInSolutionExplorer": false
 }

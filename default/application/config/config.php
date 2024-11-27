@@ -552,13 +552,25 @@ $config['proxy_ips'] = '';
   'charset' => 'iso-8859-1',
   'wordwrap' => TRUE
   ); */
-
+/*
 $config['email_config'] = Array(
     'protocol' => 'smtp',
     'smtp_host' => 'ssl://email-smtp.us-east-1.amazonaws.com',
     'smtp_port' => 465,
     'smtp_user' => 'AKIAIOHL44DPXDZI45AA', // change it to yours
     'smtp_pass' => 'Ak90+I5a6Dg7Up8J0x/i6mrU3hugKzB1hjfKBOQtuLyj', // change it to yours
+    'mailtype' => 'html',
+    'charset' => 'iso-8859-1',
+    'wordwrap' => TRUE
+);
+*/
+
+$config['email_config'] = Array(
+    'protocol' => 'smtp',
+    'smtp_host' => 'smtp.sendgrid.net',
+    'smtp_port' => 25,
+    'smtp_user' => 'YXBpa2V5', // change it to yours
+    'smtp_pass' => 'U0cueklxb0pKMHFUelNKVk1VeFFFYzhrdy4zSVZseUsxNjB2d1I1RUVPQXhrODVzOExPdUdfdU5WRjZuMGkyeWgxR25Z', // change it to yours
     'mailtype' => 'html',
     'charset' => 'iso-8859-1',
     'wordwrap' => TRUE

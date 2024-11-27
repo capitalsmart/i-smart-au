@@ -275,16 +275,17 @@
                          required: true,
                          phone_number: true,
                          },*/
-                        order_number: {
+                        /* order_number: {
                             required: true,
-                        },
+                        }, */
                         csra_site: {
                             required: true,
                         },
                         photos: {
                             required: true,
                         },
-                        car_make: {
+                      
+						  /* car_make: {
                             required: true,
                             /*   remote: {
                              url: "Customer_Facing/validate_car_make",
@@ -295,8 +296,10 @@
                              },
                              }
                              }, */
-                        },
-                        car_model: {
+                        //},
+						
+
+                        /*car_model: {
                             required: true,
                             /* remote: {
                              url: "Customer_Facing/validate_car_model",
@@ -310,7 +313,7 @@
                              }
                              }
                              } */
-                        },
+                        //},
                         vehicle_registration: {
                             required: true,
                         },
@@ -349,21 +352,21 @@
                          required: "Phone is required.",
                          phone_number: "Valid phone number like (+1234567890 or 1234567890).",
                          },*/
-                        order_number: {
-                            required: "Order number is required.",
-                        },
+                       // order_number: {
+                       //     required: "Order number is required.",
+                       // },
                         csra_site: {
                             required: "Site is required.",
                         },
                         photos: {
                             required: "Photos are required.",
                         },
-                        car_make: {
-                            required: "Car make is required.",
-                        },
-                        car_model: {
-                            required: "Car Model is required.",
-                        },
+                       // car_make: {
+                       //     required: "Car make is required.",
+                       // },
+                       // car_model: {
+                       //    required: "Car Model is required.",
+                       // },
                         vehicle_registration: {
                             required: "Vehicle Registration is required.",
                         },
@@ -416,15 +419,15 @@
                         $('#m_surname').html('');
                         $('#m_email').html('');
                         $('#m_phone').html('');
-                        $('#m_order_number').html('');
+                      //  $('#m_order_number').html('');
                         $('#m_site').html('');
                         $('#m_vehicleregistration').html('');
-                        $('#m_carmake').html('');
-                        $('#m_carmodel').html('');
-                        $('#m_caryear').html('');
-                        $('#m_cartype').html('');
+                       // $('#m_carmake').html('');
+                       // $('#m_carmodel').html('');
+                       // $('#m_caryear').html('');
+                       // $('#m_cartype').html('');
                         $('#m_carvin').html('');
-                        $('#m_carcolor').html('');
+                      //  $('#m_carcolor').html('');
                         $('#m_comments').html('');
 
 
@@ -432,15 +435,15 @@
                         var surname = $('#surname').val();
                         var email = $('#email').val();
                         var phone = $('#phone').val();
-                        var order_number = $('#order_number').val();
+                     //  var order_number = $('#order_number').val();
                         var site = $('#csra_site').val();
                         var vehicleregistration = $('#vehicle_registration').val();
-                        var carmake = $('#car_make').val();
-                        var carmodel = $('#car_model').val();
-                        var caryear = $('#car_year').val();
-                        var cartype = $('#car_type').val();
+                     //   var carmake = $('#car_make').val();
+                     //   var carmodel = $('#car_model').val();
+                     //   var caryear = $('#car_year').val();
+                     //   var cartype = $('#car_type').val();
                         var vin = $('#vin_number').val();
-                        var carcolor = $('#car_color').val();
+                     //  var carcolor = $('#car_color').val();
                         var comments = $('#comments').val();
 
 
@@ -448,15 +451,15 @@
                         $('#m_surname').html(surname);
                         $('#m_email').html(email);
                         $('#m_phone').html(phone);
-                        $('#m_order_number').html(order_number);
+                       // $('#m_order_number').html(order_number);
                         $('#m_site').html(site);
                         $('#m_vehicleregistration').html(vehicleregistration);
-                        $('#m_carmake').html(carmake);
-                        $('#m_carmodel').html(carmodel);
-                        $('#m_caryear').html(caryear);
-                        $('#m_cartype').html(cartype);
+                       // $('#m_carmake').html(carmake);
+                       // $('#m_carmodel').html(carmodel);
+                       // $('#m_caryear').html(caryear);
+                       // $('#m_cartype').html(cartype);
                         $('#m_carvin').html(vin);
-                        $('#m_carcolor').html(carcolor);
+                       // $('#m_carcolor').html(carcolor);
                         $('#m_comments').html(comments);
 
                         toolbar.reset();
@@ -504,17 +507,17 @@
                 formdata.append("surname", $("#surname").val());
                 formdata.append("email", $("#email").val());
                 formdata.append("phone", $("#phone").val());
-                formdata.append("order_number", $("#order_number").val());
+              //  formdata.append("order_number", $("#order_number").val());
                 formdata.append("csra_site", $("#csra_site").val());
                 formdata.append("vehicle_registration", $("#vehicle_registration").val());
-                formdata.append("car_make", $("#car_make").val());
-                formdata.append("car_model", $("#car_model").val());
-                formdata.append("car_year", $("#car_year").val());
-                formdata.append("car_type", $("#car_type").val());
+              //  formdata.append("car_make", $("#car_make").val());
+              //  formdata.append("car_model", $("#car_model").val());
+              //  formdata.append("car_year", $("#car_year").val());
+              //  formdata.append("car_type", $("#car_type").val());
                 formdata.append("vin_number", $("#vin_number").val());
-                formdata.append("car_color", $("#car_color").val());
+              //  formdata.append("car_color", $("#car_color").val());
                 formdata.append("comments", $("#comments").val());
-                formdata.append("annotated-image", $("#image-annottated").val());
+             //   formdata.append("annotated-image", $("#image-annottated").val());
                 formdata.append("isAjax",1);
                 jQuery.ajax({
                     type: 'POST',

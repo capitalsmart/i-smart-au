@@ -21,7 +21,7 @@
             <div style="margin-bottom:30px; text-align:left; border-bottom:0px solid #ccc; padding-bottom:10px;">
                 <p><b> Dear <?= $first_name . " " . $surname ?>,</b></p>
 
-                <p>Welcome to S.M.A.R.T. Thank you for sending through the details of the required repair ( <b><?= $order_number?></b> ). We will be in touch soon with more details.</p>
+                <p>Welcome to S.M.A.R.T. Thank you for sending through the details of your required repair. We will be in touch soon with a quote or if we require further details.</p>
 
                 <p>We have received the attached photos of the damage to your vehicle.</p>
 

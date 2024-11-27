@@ -28,15 +28,15 @@
                                 <li class="list-group-item"><span class="lbl">Phone: </span> <span class="badge value"
                                                                                                    id="m_phone"></span>
                                 </li>
-                                <li class="list-group-item"><span class="lbl">Order #: </span> <span class="badge value"
+                             <!--   <li class="list-group-item"><span class="lbl">Order #: </span> <span class="badge value"
                                                                                                      id="m_order_number"></span>
-                                </li>
+                                </li>  -->
                                 <li class="list-group-item"><span class="lbl">Site: </span> <span class="badge value"
                                                                                                   id="m_site"></span>
                                 </li>
-                                <li class="list-group-item"><span class="lbl">Car Make: </span> <span
+                                  <!-- <li class="list-group-item"><span class="lbl">Car Make: </span> <span
                                         class="badge value" id="m_carmake"></span>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -45,17 +45,17 @@
                                 <li class="list-group-item"><span class="lbl">Registration: </span> <span
                                         class="badge value"
                                         id="m_vehicleregistration"></span></li>
-                                <li class="list-group-item"><span class="lbl">Car Model: </span> <span
+                                 <!--  <li class="list-group-item"><span class="lbl">Car Model: </span> <span
                                         class="badge value"
-                                        id="m_carmodel"></span></li>
-                                <li class="list-group-item"><span class="lbl">Car Year: </span> <span
+                                        id="m_carmodel"></span></li> -->
+                                <!--   <li class="list-group-item"><span class="lbl">Car Year: </span> <span
                                         class="badge value"
                                         id="m_caryear"></span>
-                                </li>
-                                <li class="list-group-item"><span class="lbl">Body Type: </span> <span
+                                </li> -->
+                                 <!--  <li class="list-group-item"><span class="lbl">Body Type: </span> <span
                                         class="badge value"
                                         id="m_cartype"></span>
-                                </li>
+                                </li> -->
                                 <li class="list-group-item"><span class="lbl">VIN Number: </span> <span
                                         class="badge value"
                                         id="m_carvin"></span>

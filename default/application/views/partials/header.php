@@ -11,7 +11,7 @@
 <div class="text">
     <p>
         Welcome to S.M.A.R.T.
-        Providing us with the below information help us prepare for your arrival at one of our sites and get
-        your car back to you ASAP!
+        <br>
+		PLease fill in the below form and we'll be in touch with a quote for your repair. 
     </p>
 </div>

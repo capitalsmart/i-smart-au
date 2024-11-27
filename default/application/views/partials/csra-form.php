@@ -55,8 +55,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-md-12">
+   <!-- 
+        <div class="col-md-12"> 
             <div class="form-group" id="order_number-error">
                 <label for="order_number">Order Number</label>
                 <div class="form-group icon">
@@ -69,6 +69,7 @@
                 </div>
             </div>
         </div>
+		-->
         <div class="col-md-12" style="padding-top: 15px">
             <div class="form-group" id="csra_site-error">
                 <div class="form-group select-arrow icon">
@@ -88,8 +89,6 @@
 						<option value="Murrumbeena">Murrumbeena</option>
 						<option value="Mulgrave">Mulgrave</option>
 						<option value="Moorabbin">Moorabbin</option>
-						<option value="National Support Office">National Support Office</option>
-						<option value="Preston Shopfront">Preston Shopfront</option>
 						<option value="Preston">Preston</option>
 						<option value="Rowville">Rowville</option>
 						<option value="Rowville Plus">Rowville Plus</option>
@@ -122,7 +121,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+       <!-- 
+	   
+	   <div class="col-md-6">
             <div class="form-group" id="car_make-error">
                 <label for="car_make">Car Make</label>
                 <div class="form-group icon">
@@ -133,8 +134,10 @@
                 </div>
                 <div id="suggestions" class="suggestions-box hide"></div>
             </div>
-        </div>
-        <div class="col-md-6">
+        </div>  
+		-->
+       <!--
+		<div class="col-md-6">
             <div class="form-group" id="car_model-error">
                 <label for="car_model">Car Model</label>
                 <div class="form-group icon">
@@ -147,6 +150,8 @@
                 <div id="suggestions2" class="suggestions-box hide"></div>
             </div>
         </div>
+		-->
+		<!--
         <div class="col-md-6">
             <div class="form-group" id="car_year-error">
                 <label for="car_year">Car Year</label>
@@ -158,6 +163,7 @@
                 </div>
             </div>
         </div>
+		-->
         <!--  <div class="col-md-6">
             <div class="form-group" id="car_type-error">
                 <label for="car_type">Body Type</label>
@@ -170,6 +176,7 @@
                 </div>
             </div>
         </div>-->
+		<!--
         <div class="col-md-6">
             <div class="form-group" id="car_type-error">
                 <label for="car_type">Body Type</label>
@@ -190,6 +197,7 @@
                 </div>
 
             </div>
+			-->
         </div>
         <div class="col-md-6">
             <div class="form-group" id="vin_number-error">
@@ -238,7 +246,8 @@
     </div>
 
     <br/>
-    <div class="topbar">
+   <!--
+	<div class="topbar">
         Damage Capture
     </div>
     <div class="row">
@@ -265,17 +274,33 @@
             <div id="car-app-container"></div>    
 			
         </div>
-    </div>
+    </div> 
+	-->
     <br>
 
     <div class="topbar" id="photos-error">
-        Add photos of the damage to your vehicle <span class="hind small">(recommended 5-8)</span>
+       Add Photos of the damage <span class="hind small">(recommended 5-8)</span>
     </div>
     <div class="row">
         <div class="col-md-12">
+		  <div class="col-xs-12 well">
+                <ul>
+                    <li>To get an accurate quote, we require clear photos of your vehicle</li>
+                    <li>Pleae provide photos from each side and corner of your vehicle
+                    </li>
+                    <li>Add close up photos of the damaged areas.
+                    </li>
+                    <li>If you make a mistake, you can delete the photo and re-upload.
+                    </li>
+                </ul>
+            </div>
+			<br>
+			<center>
+
             <div id="fine-uploader-gallery" class="form-group"></div>
             <div class="clearfix"></div>
             <div id="msg" class="error text-center"></div>
+			</center>
         </div>
         
     </div>

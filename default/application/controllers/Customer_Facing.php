@@ -199,7 +199,8 @@ class Customer_Facing extends CI_Controller
         $message = $this->load->view('emails/csra_team_email.php', $email_template_data, TRUE);
 
         $xmlFile = save_data_as_xml_file($data, $this->session->userdata("uuid-user"));
-        return custom_send_email(
+        //return custom_send_email(
+		return sendgrid_send_email(
                 $this->config->item('csra_emails')[ENVIRONMENT]['csra_team_emails'],
                 null,
 		"i-S.M.A.R.T Repair Request - ".trim($data['vehicle_registration']),
@@ -225,7 +226,8 @@ class Customer_Facing extends CI_Controller
         ];
         $message = $this->load->view('emails/customer_email.php', $email_template_data, TRUE);
         
-        return custom_send_email(
+        //return custom_send_email(
+		return sendgrid_send_email(
                 $data['email'],
                 $this->config->item('csra_emails')[ENVIRONMENT]['cc_recipient_customer_email'],
                 "i-S.M.A.R.T Repair Request - ".trim($data['vehicle_registration']),

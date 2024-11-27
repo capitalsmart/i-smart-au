@@ -43,6 +43,31 @@ function custom_send_email($to, $cc, $subject, $message, $attachments, $annotate
     }
 }
 
+
+function sendgrid_send_email($to, $cc, $subject, $message, $attachments, $annotatedImage = null, $xmlAttachment = null)
+{
+
+$email = new \SendGrid\Mail\Mail();
+$email->setFrom(ADMIN_EMAIL, "i-S.M.A.R.T");
+$email->setSubject("Sending with Twilio SendGrid is Fun");
+$email->addTo("scott.lancaster@amagroupltd.com", "Scott Lancaster");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
+
+}
+
+
 function save_data_as_xml_file($data, $user_id)
 {
     //creating object of SimpleXMLElement
@@ -109,4 +134,3 @@ function rrmdir($dir) {
      rmdir($dir); 
    } 
  }
- 

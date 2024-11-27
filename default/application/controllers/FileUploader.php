@@ -8,6 +8,7 @@ class FileUploader extends CI_Controller {
     public function __construct() {
         parent::__construct();
 	
+		/*  27112024 - Remove login check 
          if (!$this->session->userdata("isUserLoggedIn") && !isset($_REQUEST['isAjax'])) {
             redirect('/Login/index', 'refresh');
         } elseif(!$this->session->userdata("isUserLoggedIn") && isset($_REQUEST['isAjax'])) {
@@ -19,7 +20,8 @@ class FileUploader extends CI_Controller {
             echo json_encode($response);
             exit;
         }
-		
+		*/
+
         $this->load->library("fineuploader");
         $this->load->helper("fineuploader");
     }

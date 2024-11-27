@@ -4,9 +4,9 @@
     "\\.github",
     "\\default",
     "\\default\\application",
-    "\\default\\application\\controllers",
-    "\\default\\assets\\uploads"
+    "\\default\\application\\config",
+    "\\default\\application\\controllers"
   ],
-  "SelectedNode": "\\default\\application\\controllers\\FileUploader.php",
+  "SelectedNode": "\\default\\application\\config\\routes.php",
   "PreviewInSolutionExplorer": false
 }

@@ -118,7 +118,8 @@
                     $('#car_year').val(caryear);
                 }
                 
-                // Check If session is expired automatically redirect to login page
+               /* 27112024 Remove login check
+				// Check If session is expired automatically redirect to login page
                 var timerID = setInterval(function() {
                     $.ajax({
                         type: "GET",
@@ -130,6 +131,8 @@
                         }
                     });
                 }, 60 * 5 * 1000); // request per 10 min 
+				*/
+
             });
 
             // Car make auto suggest

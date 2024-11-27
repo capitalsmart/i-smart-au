@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+require 'vendor/autoload.php';
+
 class Customer_Facing extends CI_Controller
 {
     function __construct()

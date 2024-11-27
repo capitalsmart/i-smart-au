@@ -197,8 +197,8 @@
                 </div>
 
             </div>
-			-->
-        </div>
+			
+        </div>-->
         <div class="col-md-6">
             <div class="form-group" id="vin_number-error">
                 <label for="vin_number">VIN Number</label>

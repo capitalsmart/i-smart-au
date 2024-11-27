@@ -174,18 +174,18 @@
             photos: {
                 required: true,
             },
-            car_make: {
-                required: true,
-            },
-            car_model: {
-                required: true,
-            },
+         //   car_make: {
+         //       required: true,
+         //   },
+          //  car_model: {
+          //      required: true,
+          //  },
             vehicle_registration: {
                 required: true,
             },
-            car_year: {
-                required: true,
-            },
+          //  car_year: {
+          //      required: true,
+          //  },
             comments: {
                 required: true,
             },

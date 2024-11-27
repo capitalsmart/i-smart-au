@@ -55,7 +55,8 @@ class Cars_Model extends CI_Model  {
         'order_number' => array(
             'field' => 'order_number',
             'label' => 'Order Number',
-            'rules' => 'trim|required|xss_clean',
+            //'rules' => 'trim|required|xss_clean',
+			'rules' => 'trim|xss_clean',
         ),
         'csra_site' => array(
             'field' => 'csra_site',
@@ -65,12 +66,14 @@ class Cars_Model extends CI_Model  {
         'car_make' => array(
             'field' => 'car_make',
             'label' => 'Car make',
-            'rules' => 'trim|required|xss_clean',
+            //'rules' => 'trim|required|xss_clean',
+			'rules' => 'trim|xss_clean',
         ),
         'car_model' => array(
             'field' => 'car_model',
             'label' => 'Car model',
-            'rules' => 'trim|required|xss_clean',
+           //'rules' => 'trim|required|xss_clean',
+			'rules' => 'trim|xss_clean',
           //  "errors" => array('name_check' => 'The %s field may only contain alphabetical characters.')
         ),
         'vehicle_registration' => array(

@@ -184,13 +184,13 @@ class Customer_Facing extends CI_Controller
             'forminputs' => [
                 'Email' => trim($data['email']),
                 'Phone Number' => trim($data['phone']),
-                'Order Number' => trim($data['order_number']),
+               // 'Order Number' => trim($data['order_number']),
                 'Site' => trim($data['csra_site']),
-                'Car Make' => trim($data['car_make']),
+               // 'Car Make' => trim($data['car_make']),
                 'Car Registration' => trim($data['vehicle_registration']),
-                'Car Model' => trim($data['car_model']),
-                'Car Year' => trim($data['car_year']),
-                'Body Type' => trim($data['car_type']),
+              //  'Car Model' => trim($data['car_model']),
+              //  'Car Year' => trim($data['car_year']),
+              //  'Body Type' => trim($data['car_type']),
                 'Vin Number' => trim($data['vin_number']),
                 'Color' => trim($data['car_color']),
                 'Comments' => trim($data['comments']),
@@ -215,11 +215,11 @@ class Customer_Facing extends CI_Controller
         $email_template_data = [
             'first_name' => ucfirst(strtolower(trim($data['first_name']))),
             'surname' => ucfirst(strtolower(trim($data['surname']))),
-            'order_number' => trim($data['order_number']),
+           // 'order_number' => trim($data['order_number']),
             'photos' => $photos,
             'forminputs' => [
-                'Make' => trim($data['car_make']),
-                'Model' => trim($data['car_model']),
+           //     'Make' => trim($data['car_make']),
+            //    'Model' => trim($data['car_model']),
                 'Registration' => trim($data['vehicle_registration']),
             ]
         ];

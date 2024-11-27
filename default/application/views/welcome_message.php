@@ -212,18 +212,18 @@
             photos: {
                 required: "The Photos are required.",
             },
-            car_make: {
-                required: "The Car make is required.",
-            },
-            car_model: {
-                required: "The Car Model is required.",
-            },
+            //car_make: {
+            //    required: "The Car make is required.",
+           // },
+           // car_model: {
+           //     required: "The Car Model is required.",
+           // },
             vehicle_registration: {
                 required: "The Vehicle Registration is required.",
             },
-            car_year: {
-                required: "The Car Year is required.",
-            },
+            //car_year: {
+            //    required: "The Car Year is required.",
+            //},
             comments: {
                 required: "The Comments are required.",
             },

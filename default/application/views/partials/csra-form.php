@@ -76,25 +76,86 @@
                     <select class="form-control form-control-select" name="csra_site" id="csra_site" place_error="mov_err"
                             placeholder="Select your Site * ">
                         <option hidden value="">Select Your Site *</option>
-                        <option value="Airport West">Airport West</option>
-                        <option value="Blackburn">Blackburn</option>
-                        <option value="Carrum Downs">Carrum Downs</option>
-						<option value="Coburg">Coburg</option>
-						<option value="Dandenong S.M.A.R.T.">Dandenong S.M.A.R.T.</option>
-						<option value="Dandenong Plus">Dandenong Plus</option>
-						<option value="East Bentleigh">East Bentleigh</option>
-						<option value="Hallam">Hallam</option>
-						<option value="Hoppers Crossing">Hoppers Crossing</option>
-						<option value="Knoxfield">Knoxfield</option>
-						<option value="Murrumbeena">Murrumbeena</option>
-						<option value="Mulgrave">Mulgrave</option>
-						<option value="Moorabbin">Moorabbin</option>
-						<option value="Preston">Preston</option>
-						<option value="Rowville">Rowville</option>
-						<option value="Rowville Plus">Rowville Plus</option>
-						<option value="Sunshine">Sunshine</option>
-						<option value="Tullamarine">Tullamarine</option>
-						<option value="Tullamarine Plus">Tullamarine Plus</option>
+                         <optgroup label="ACT">
+						 <option value=Fyshwick>Fyshwick</option>
+					     <option value=Queanbeyan>Queanbeyan</option>
+
+						 </optgroup>
+						 <optgroup label="NSW">
+						 <option value=Botany>Botany</option>
+						<option value=Brookvale>Brookvale</option>
+						<option value=Chatswood>Chatswood</option>
+						<option value=Ingleburn>Ingleburn</option>
+						<option value=Lane Cove>Lane Cove</option>
+						<option value=Lansvale>Lansvale</option>
+						<option value=Mascot>Mascot</option>
+						<option value=Milperra>Milperra</option>
+						<option value=Moorebank>Moorebank</option>
+						<option value=Peakhurst>Peakhurst</option>
+						<option value=Seven Hills>Seven Hills</option>
+						<option value=Seven Hills Bonz>Seven Hills Bonz</option>
+						<option value=Seven Hills Stanton>Seven Hills Stanton</option>
+						<option value=Silverwater>Silverwater</option>
+						<option value=St Marys>St Marys</option>
+
+
+						 </optgroup>
+						  <optgroup label="QLD">
+						  <option value=Archerfield>Archerfield</option>
+							<option value=Banyo>Banyo</option>
+							<option value=Darra>Darra</option>
+							<option value=Murarrie>Murarrie</option>
+							<option value=Nerang>Nerang</option>
+							<option value=Nerang Lawrence>Nerang Lawrence</option>
+							<option value=Tingalpa>Tingalpa</option>
+
+						 </optgroup>
+						  <optgroup label="SA">
+						  <option value=Holden Hill>Holden Hill</option>
+							<option value=Mile End>Mile End</option>
+
+						 </optgroup>
+						  <optgroup label="TAS">
+						  <option value=Hobart>Hobart</option>
+					     <option value=Launceston>Launceston</option>
+
+						 </optgroup>
+						  <optgroup label="VIC">
+						  <option value=Airport West>Airport West</option>
+							<option value=Bayswater>Bayswater</option>
+							<option value=Blackburn>Blackburn</option>
+							<option value=Carrum Downs>Carrum Downs</option>
+							<option value=Coburg>Coburg</option>
+							<option value=Dandenong Rodeo>Dandenong Rodeo</option>
+							<option value=East Bentleigh>East Bentleigh</option>
+							<option value=Hallam>Hallam</option>
+							<option value=Hoppers Crossing>Hoppers Crossing</option>
+							<option value=Hoppers Crossing Kilmur>Hoppers Crossing Kilmur</option>
+							<option value=Knoxfield>Knoxfield</option>
+							<option value=Laverton>Laverton</option>
+							<option value=Mitcham>Mitcham</option>
+							<option value=Moorabbin>Moorabbin</option>
+							<option value=Mulgrave>Mulgrave</option>
+							<option value=Rowville>Rowville</option>
+							<option value=Somerton>Somerton</option>
+							<option value=South Morang>South Morang</option>
+							<option value=Sunshine >Sunshine </option>
+							<option value=Sunshine North>Sunshine North</option>
+							<option value=Sunshine West>Sunshine West</option>
+							<option value=Thornbury>Thornbury</option>
+							<option value=Tullamarine>Tullamarine</option>
+
+						 </optgroup>
+						  <optgroup label="WA">
+						  <option value=Booragoon>Booragoon</option>
+							<option value=Osborne Park>Osborne Park</option>
+							<option value=Port Kennedy>Port Kennedy</option>
+							<option value=Welshpool>Welshpool</option>
+							<option value=Belconnen>Belconnen</option>
+
+						 </optgroup>
+
+					
                     </select>
                     <i class=""> <img src="<?php echo base_url('assets/images/icon-site.png'); ?>" alt="img"/>
                     </i>

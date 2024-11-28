@@ -530,8 +530,8 @@
                     success: function (obj) {
                         var response = jQuery.parseJSON(obj);
                           console.log(response);
-						  echo response.message;
-						  echo response.status; 
+						  echo response;
+						  
 
 						if (response.message == 'unauthorized' && response.status == 403) {
                             alert("Your Session is expired! Please Try Again.");

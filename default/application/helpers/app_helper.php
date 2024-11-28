@@ -50,12 +50,24 @@ function sendgrid_send_email($to, $cc, $subject, $message, $attachments, $annota
 
 $email = new \SendGrid\Mail\Mail();
 $email->setFrom(ADMIN_EMAIL, "i-S.M.A.R.T");
-$email->setSubject("Sending with Twilio SendGrid is Fun");
-$email->addTo("scott.lancaster@amagroupltd.com", "Scott Lancaster");
-$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-$email->addContent(
-    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-);
+//$email->setSubject("Sending with Twilio SendGrid is Fun");
+$email->setSubject($subject);
+//$email->addTo("scott.lancaster@amagroupltd.com", "Scott Lancaster");
+$email->addTo($to);
+
+//$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+//$email->addContent(
+//    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+//);
+$email->addContent($message);
+
+  $count = 1;
+    foreach ($attachments as $attachment) {
+        $ext = pathinfo($attachment, PATHINFO_EXTENSION);
+        $email->addAttachment($attachements);
+        $count++;
+    }
+
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
     $response = $sendgrid->send($email);

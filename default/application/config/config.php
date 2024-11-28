@@ -592,7 +592,7 @@ $config['csra_emails'] = [
             //'zeshan@techarete.com',
             //'babar@techarete.com',
 	    //'andrew.bartlett@capitalsmart.com.au',
-	      'scott.lancaster@amagroupltd.com'
+	      'scott.lancaster@amagroupltd.com',
             //'mueez@techarete.com',
             //'richard.bench@capitalsmart.com.au'
         ]

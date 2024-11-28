@@ -53,7 +53,7 @@ $email->setFrom(ADMIN_EMAIL, "i-S.M.A.R.T");
 //$email->setSubject("Sending with Twilio SendGrid is Fun");
 $email->setSubject($subject);
 //$email->addTo("scott.lancaster@amagroupltd.com", "Scott Lancaster");
-$email->addTo(implode(",",$to);
+$email->addTo(implode(",",$to));
 
 $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 //$email->addContent(

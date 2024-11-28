@@ -570,7 +570,7 @@ $config['email_config'] = Array(
     'smtp_host' => 'smtp.sendgrid.net',
     'smtp_port' => 25,
     'smtp_user' => 'YXBpa2V5', // change it to yours
-    'smtp_pass' => 'U0cuNk51SlVUS05Rb2FZdlI0UmJOOUlEUS5RcXJPSVVyYWFaSUlMSWVaTXVlS1JvM0hTd0ZvZHVUVDFibElub1NhMFp3', // change it to yours
+    'smtp_pass' => '', // change it to yours
     'mailtype' => 'html',
     'charset' => 'iso-8859-1',
     'wordwrap' => TRUE
@@ -591,8 +591,8 @@ $config['csra_emails'] = [
             //'innamhunzai@gmail.com',
             //'zeshan@techarete.com',
             //'babar@techarete.com',
-	    //'andrew.bartlett@capitalsmart.com.au',
-	      'scott.lancaster@amagroupltd.com',
+	        //'andrew.bartlett@capitalsmart.com.au',
+	        'scott.lancaster@amagroupltd.com',
             //'mueez@techarete.com',
             //'richard.bench@capitalsmart.com.au'
         ]
@@ -606,7 +606,7 @@ $config['csra_emails'] = [
 			'jim.vais@capitalsmart.com.au', */
         ],
         'csra_team_emails' => [
-	'scott.lancaster@amagroupltd.com',
+	        'scott.lancaster@amagroupltd.com',
             /* 'zeshan@techarete.com',
             'babar@techarete.com',
 			'andrew.bartlett@capitalsmart.com.au',

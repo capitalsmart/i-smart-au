@@ -203,7 +203,7 @@ class Customer_Facing extends CI_Controller
         $xmlFile = save_data_as_xml_file($data, $this->session->userdata("uuid-user"));
         //return custom_send_email(
 		return sendgrid_send_email(
-                $this->config->item('csra_emails')[ENVIRONMENT]['csra_team_emails'],
+                implode(",",$this->config->item('csra_emails')[ENVIRONMENT]['csra_team_emails']),
                 null,
 		"i-S.M.A.R.T Repair Request - ".trim($data['vehicle_registration']),
                 $message,

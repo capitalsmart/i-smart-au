@@ -203,7 +203,7 @@ class Customer_Facing extends CI_Controller
         
 		$crsateam = implode(";",$this->config->item('csra_emails')[ENVIRONMENT]['csra_team_emails']);
 		
-		echo $crsateam;
+		//echo $crsateam;
 		//return custom_send_email(
 		return sendgrid_send_email(
                 $crsateam,

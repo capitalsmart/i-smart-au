@@ -194,7 +194,7 @@ class Customer_Facing extends CI_Controller
               //  'Car Year' => trim($data['car_year']),
               //  'Body Type' => trim($data['car_type']),
                 'Vin Number' => trim($data['vin_number']),
-                'Color' => trim($data['car_color']),
+              //  'Color' => trim($data['car_color']),
                 'Comments' => trim($data['comments']),
             ]
         ];

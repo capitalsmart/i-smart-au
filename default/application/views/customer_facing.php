@@ -443,7 +443,7 @@
                      //   var caryear = $('#car_year').val();
                      //   var cartype = $('#car_type').val();
                         var vin = $('#vin_number').val();
-                     //  var carcolor = $('#car_color').val();
+                      //  var carcolor = $('#car_color').val();
                         var comments = $('#comments').val();
 
 
@@ -459,7 +459,7 @@
                        // $('#m_caryear').html(caryear);
                        // $('#m_cartype').html(cartype);
                         $('#m_carvin').html(vin);
-                       // $('#m_carcolor').html(carcolor);
+                    //   $('#m_carcolor').html(carcolor);
                         $('#m_comments').html(comments);
 
                         toolbar.reset();

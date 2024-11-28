@@ -55,11 +55,11 @@ $email->setSubject($subject);
 //$email->addTo("scott.lancaster@amagroupltd.com", "Scott Lancaster");
 $email->addTo($to);
 
-//$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 //$email->addContent(
 //    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 //);
-$email->addContent($message);
+//$email->addContent($message);
 /*
   $count = 1;
     foreach ($attachments as $attachment) {

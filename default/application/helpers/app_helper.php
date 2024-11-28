@@ -64,7 +64,7 @@ $email->addContent($message);
   $count = 1;
     foreach ($attachments as $attachment) {
         $ext = pathinfo($attachment, PATHINFO_EXTENSION);
-        $email->addAttachment($attachements);
+        $email->addAttachment($attachments);
         $count++;
     }
 

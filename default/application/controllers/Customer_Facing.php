@@ -202,7 +202,8 @@ class Customer_Facing extends CI_Controller
 		$xmlFile = save_data_as_xml_file($data, $this->session->userdata("uuid-user"));
         
 		$crsateam = implode(";",$this->config->item('csra_emails')[ENVIRONMENT]['csra_team_emails']);
-		echo $csrateam;
+		
+		echo $crsateam;
 		//return custom_send_email(
 		return sendgrid_send_email(
                 $crsateam,

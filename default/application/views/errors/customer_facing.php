@@ -452,7 +452,8 @@
             processData: false,
             contentType: false,
             success: function (response) {
-//                console.log(response);
+                console.log(response);
+				echo (response);
                 if (response) {
                     $(".overlay").html("");
                     jQuery('#1x').modal('hide');

@@ -525,9 +525,15 @@
                     data: formdata,
                     processData: false,
                     contentType: false,
+
+					  
                     success: function (obj) {
                         var response = jQuery.parseJSON(obj);
-                        if (response.message == 'unauthorized' && response.status == 403) {
+                          console.log(response);
+						  echo response.message;
+						  echo response.status; 
+
+						if (response.message == 'unauthorized' && response.status == 403) {
                             alert("Your Session is expired! Please Try Again.");
                             window.location = "<?= base_url("Login/index"); ?>"
                         } else if (response.message === 'success' && response.status === 200) {

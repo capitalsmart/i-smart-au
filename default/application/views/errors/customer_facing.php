@@ -451,10 +451,10 @@
             data: formdata,
             processData: false,
             contentType: false,
-            success: function (response) {
-                console.log(response);
-				echo (response);
-                if (response) {
+          //  success: function (response) {
+            //    console.log(response);
+		  
+            //      if (response) {
                     $(".overlay").html("");
                     jQuery('#1x').modal('hide');
                     $('html, body').animate({scrollTop: $('#form').position().top}, 'slow');
@@ -466,13 +466,13 @@
                     setTimeout(function(){
                         window.location.reload(1);
                     }, 5000);
-                } else {
-                    $(".overlay").html("");
-                    jQuery('#1x').modal('hide');
-                    $('html, body').animate({scrollTop: $('#form').position().top}, 'slow');
-                    $('#msg-r').removeClass('hide');
-                }
-            }
+          //      } else {
+          //          $(".overlay").html("");
+          //          jQuery('#1x').modal('hide');
+          //          $('html, body').animate({scrollTop: $('#form').position().top}, 'slow');
+          //          $('#msg-r').removeClass('hide');
+          //      }
+          //  }  
         });
 
 

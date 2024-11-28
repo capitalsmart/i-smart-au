@@ -60,13 +60,14 @@ $email->addTo($to);
 //    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 //);
 $email->addContent($message);
-
+/*
   $count = 1;
     foreach ($attachments as $attachment) {
         $ext = pathinfo($attachment, PATHINFO_EXTENSION);
         $email->addAttachment($attachments);
         $count++;
     }
+	*/
 
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
